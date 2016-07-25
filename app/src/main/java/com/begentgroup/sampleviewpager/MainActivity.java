@@ -19,6 +19,25 @@ public class MainActivity extends AppCompatActivity {
 
         pager.setAdapter(mAdapter);
 
+        pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                setTitle("page : " + position);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+        setTitle("page : 0");
+
         initData();
     }
 

@@ -57,6 +57,6 @@ public class MyPagerAdapter extends PagerAdapter {
 
     @Override
     public float getPageWidth(int position) {
-        return 0.5f;
+        return 1.0f;
     }
 }
